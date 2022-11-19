@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* 
+    Paletas de cores:
+    https://palettes.shecodes.io/palettes/236#palette
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+
+    .header {
+        background-color: #f57b51;
+        color: #fff;
+        width: 100%;
+        padding: 15px;
+    
+        .header-titos-market {
+            display: flex;
+            align-items: center;
+    
+            .menu {
+                margin-left: 25px;
+    
+                .item-menu {
+                    background-color: #f6eedf;
+                    color: #222;
+    
+                    margin-left: 20px;
+                    padding: 20px;
+                    border-radius: 5px;
+    
+                    text-decoration: none;
+                }
+            }
+    
+            .operador {
+                position: absolute;
+                right: 15px;
+    
+                span {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    main {
+        .cupom-produto {
+            display: flex;
+            justify-content: space-between;
+    
+            padding: 15px;
+            width: 100%;
+    
+            .cupom-fiscal {
+                border: 2px solid #ddd;
+                width: 65%;
+                height: 565px;
+            }
+
+            .imagem-produto {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border: 2px solid #ddd;
+                width: 34%;
+                height: 565px;
+
+                #produto-img {
+                    height: 350px;
+                }
+            }
+        }
+
+        .info-codigo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: #f57b51;
+            color: #fff;
+            width: 100%;
+            padding: 15px;
+
+            position: fixed;
+            bottom: 0;
+
+            .input-codigo {
+                border: 2px solid #CCC;
+                border-radius: 6px;
+                width: 400px;
+                font-size: 25px;
+                padding: 7px 15px;
+            }
+        }
+
+        .bgError {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f57b51;
+            height: 100vh;
+            width: 100%;
+
+            p {
+                font-weight: 800;
+                font-size: 22px;
+            }
+
+            .back {
+                border-radius: 8px;
+                background-color: #ddd;
+                padding: 12px;
+                margin: 12px;
+
+                text-decoration: none;
+                color: #222;
+            }
+        }
+
+        .gestaoTabela {
+            width: 100%;
+
+            tr {
+                text-align: center;
+
+                .btnGerenciar {
+                    button {
+                        border: none;
+                        background-color: transparent;
+
+                        &:last-child {
+                            margin-left: 6px;
+                        }
+                    }
+
+                    .addItem {
+                        &:hover {
+                            color: rgb(99, 236, 57);
+                            // background-color: #000;
+                        }
+                    }
+                    .delete {
+                        &:hover {
+                            color: rgb(236, 68, 68);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
